@@ -6,7 +6,7 @@ Xinhao Chen
 
 ## Class link
 
-[Canvas course page](https://northeastern.instructure.com/)
+[Canvas course page](https://northeastern.instructure.com/courses/249954/assignments/3196233)
 
 ## Project objective
 
@@ -14,7 +14,7 @@ The goal of this project is to build a front-end only personal homepage using va
 
 ## Live site
 
-After deployment, add the GitHub Pages URL here.
+https://xaiz096.github.io/Personal-Web/
 
 ## Screenshot
 
@@ -135,7 +135,7 @@ AI assistance was used in this project.
 
 - Tool/model: OpenAI ChatGPT, GPT-5.5 Thinking.
 - Version/date used: May 2026.
-- How it was used: drafting the initial project structure, writing starter HTML/CSS/JS, creating the AI generated study planner page, preparing the design document, and preparing the README.
+- How it was used: drafting the initial project structure, writing starter HTML/CSS/JS, creating the AI generated study planner page, and preparing the README.
 - Human review: The author should review the code, update any personal details, run validation tools, and make final edits before submission.
 
 Example prompts used:
