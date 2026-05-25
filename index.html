@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xinhao Chen">
+    <meta
+      name="description"
+      content="Personal homepage for Xinhao Chen, a Computer Engineering student interested in web development, hardware, and practical software projects."
+    >
+    <title>Xinhao Chen | Personal Homepage</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__brand" href="./index.html" aria-label="Go to homepage">XC</a>
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          Menu
+        </button>
+        <ul class="nav__list" id="primary-menu">
+          <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="./about.html">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="./ai.html">AI Page</a></li>
+        </ul>
+        <button class="button button--ghost theme-button" type="button" data-theme-toggle>
+          Change Theme
+        </button>
+      </nav>
+    </header>
+
+    <main class="main" id="main-content">
+      <section class="hero section section--hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow" id="time-greeting">Welcome to my homepage</p>
+          <h1 class="hero__title" id="hero-title">Hi, I am Xinhao Chen.</h1>
+          <p class="hero__text">
+            I am a Computer Engineering student building practical projects across web
+            development, hardware, and data-driven problem solving.
+          </p>
+          <div class="hero__actions" aria-label="Homepage actions">
+            <a class="button" href="#projects">View Projects</a>
+            <a class="button button--secondary" href="./about.html">Learn More</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img
+            class="hero__image"
+            src="./assets/images/profile.svg"
+            alt="Illustration of a student working on a laptop with code and circuit symbols"
+          >
+        </figure>
+      </section>
+
+      <section class="section card-grid-section" aria-labelledby="overview-title">
+        <div class="section__heading">
+          <p class="eyebrow">Quick overview</p>
+          <h2 id="overview-title">What this homepage shows</h2>
+        </div>
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Engineering mindset</h3>
+            <p>
+              I like breaking large technical problems into clear steps, testing each part,
+              and improving the final result.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Web development</h3>
+            <p>
+              This site uses only vanilla HTML, CSS, and ES modules, with no component
+              library or jQuery.
+            </p>
+          </article>
+          <article class="info-card">
+            <h3>Creative feature</h3>
+            <p>
+              The homepage includes a mini project filter and a study quote generator made
+              with original JavaScript.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section__heading section__heading--split">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2 id="projects-title">Featured work</h2>
+          </div>
+          <div class="filter-group" aria-label="Filter project cards">
+            <button class="filter-button is-active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="web">Web</button>
+            <button class="filter-button" type="button" data-filter="hardware">Hardware</button>
+            <button class="filter-button" type="button" data-filter="data">Data</button>
+          </div>
+        </div>
+
+        <div class="project-grid" data-project-grid>
+          <article class="project-card" data-category="web">
+            <img
+              class="project-card__image"
+              src="./assets/images/web-project.svg"
+              alt="Browser window illustration for a web development project"
+            >
+            <div class="project-card__body">
+              <p class="tag">Web</p>
+              <h3>Personal Homepage</h3>
+              <p>
+                A responsive homepage with semantic HTML, organized CSS, and ES module
+                JavaScript.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="hardware">
+            <img
+              class="project-card__image"
+              src="./assets/images/hardware-project.svg"
+              alt="Circuit board illustration for a hardware project"
+            >
+            <div class="project-card__body">
+              <p class="tag">Hardware</p>
+              <h3>Embedded Systems Practice</h3>
+              <p>
+                Small experiments focused on circuits, sensors, timing, and readable test
+                results.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="data">
+            <img
+              class="project-card__image"
+              src="./assets/images/data-project.svg"
+              alt="Chart illustration for a data analysis project"
+            >
+            <div class="project-card__body">
+              <p class="tag">Data</p>
+              <h3>Engineering Data Notes</h3>
+              <p>
+                Organizing raw measurements into charts and summaries that support better
+                decisions.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section creative-panel" aria-labelledby="creative-title">
+        <div class="creative-panel__content">
+          <p class="eyebrow">Original component</p>
+          <h2 id="creative-title">Study focus generator</h2>
+          <p>
+            Click the button to receive a short focus prompt. This feature is original
+            JavaScript and gives the page a small interactive identity.
+          </p>
+          <button class="button" type="button" data-quote-button>Generate Focus Prompt</button>
+        </div>
+        <blockquote class="quote-card" aria-live="polite" data-quote-output>
+          Pick one task, set a timer, and make the first step easy.
+        </blockquote>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Xinhao Chen. Built with HTML, CSS, and ES modules.</p>
+    </footer>
+  </body>
+</html>

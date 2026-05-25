@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Hardware project illustration</title>
+  <desc id="desc">A circuit board with traces and electronic components.</desc>
+  <rect width="640" height="400" fill="#eef2ff"/>
+  <rect x="128" y="70" width="384" height="260" rx="34" fill="#335cbb"/>
+  <rect x="218" y="132" width="204" height="136" rx="20" fill="#ffffff"/>
+  <circle cx="188" cy="126" r="18" fill="#f2a541"/>
+  <circle cx="452" cy="126" r="18" fill="#f2a541"/>
+  <circle cx="188" cy="274" r="18" fill="#f2a541"/>
+  <circle cx="452" cy="274" r="18" fill="#f2a541"/>
+  <path d="M218 180h-42v-54M422 180h42v-54M218 220h-42v54M422 220h42v54" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M260 168h120M260 200h80M260 232h120" stroke="#335cbb" stroke-width="14" stroke-linecap="round"/>
+</svg>
