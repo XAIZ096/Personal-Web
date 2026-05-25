@@ -1,0 +1,29 @@
+{
+  "name": "personal-homepage-project",
+  "version": "1.0.0",
+  "description": "A vanilla HTML, CSS, and ES module personal homepage project.",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "start": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "lint": "eslint assets/js/**/*.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "homepage",
+    "html",
+    "css",
+    "javascript",
+    "es-modules"
+  ],
+  "author": "Xinhao Chen",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "eslint": "^9.15.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.11"
+  }
+}

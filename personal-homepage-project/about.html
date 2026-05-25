@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xinhao Chen">
+    <meta
+      name="description"
+      content="About page for Xinhao Chen, including academic interests, skills, goals, and a static contact section."
+    >
+    <title>About | Xinhao Chen</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script type="module" src="./assets/js/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="nav__brand" href="./index.html" aria-label="Go to homepage">XC</a>
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-menu"
+        >
+          Menu
+        </button>
+        <ul class="nav__list" id="primary-menu">
+          <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="./about.html">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="./ai.html">AI Page</a></li>
+        </ul>
+        <button class="button button--ghost theme-button" type="button" data-theme-toggle>
+          Change Theme
+        </button>
+      </nav>
+    </header>
+
+    <main class="main" id="main-content">
+      <section class="section page-hero" aria-labelledby="about-title">
+        <p class="eyebrow">About me</p>
+        <h1 id="about-title">I enjoy building projects that connect software and engineering.</h1>
+        <p>
+          My interests include front-end development, computer engineering, hardware systems,
+          and using data to explain real problems clearly.
+        </p>
+      </section>
+
+      <section class="section two-column" aria-labelledby="skills-title">
+        <div>
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">Technical areas</h2>
+          <p>
+            I am still learning, but I try to make every project organized, tested, and easy
+            for another person to understand.
+          </p>
+        </div>
+        <div class="skill-list" aria-label="Skill list">
+          <article class="skill-card">
+            <h3>HTML and CSS</h3>
+            <p>Semantic pages, responsive layouts, accessible labels, and clean styling.</p>
+          </article>
+          <article class="skill-card">
+            <h3>JavaScript</h3>
+            <p>ES modules, DOM interaction, event handling, and small reusable functions.</p>
+          </article>
+          <article class="skill-card">
+            <h3>Engineering</h3>
+            <p>Circuits, hardware thinking, technical documentation, and problem analysis.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section timeline" aria-labelledby="timeline-title">
+        <p class="eyebrow">Path</p>
+        <h2 id="timeline-title">Learning timeline</h2>
+        <ol class="timeline__list">
+          <li class="timeline__item">
+            <h3>Foundation</h3>
+            <p>Build strong fundamentals in programming, math, circuits, and systems.</p>
+          </li>
+          <li class="timeline__item">
+            <h3>Practice</h3>
+            <p>Use class projects to turn ideas into working software and clear reports.</p>
+          </li>
+          <li class="timeline__item">
+            <h3>Growth</h3>
+            <p>Keep improving code quality, documentation, accessibility, and design choices.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section contact-card" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Send a quick message preview</h2>
+          <p>
+            This form is front-end only. It creates a preview message on the page instead of
+            sending data to a server.
+          </p>
+        </div>
+        <form class="contact-form" data-contact-form>
+          <label class="form-label" for="visitor-name">Name</label>
+          <input class="form-input" id="visitor-name" name="visitor-name" type="text" required>
+
+          <label class="form-label" for="message-topic">Topic</label>
+          <select class="form-input" id="message-topic" name="message-topic">
+            <option value="project">Project question</option>
+            <option value="class">Class discussion</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label class="form-label" for="visitor-message">Message</label>
+          <textarea
+            class="form-input"
+            id="visitor-message"
+            name="visitor-message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button class="button" type="submit">Preview Message</button>
+          <p class="form-preview" aria-live="polite" data-form-preview></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> Xinhao Chen. Built with HTML, CSS, and ES modules.</p>
+    </footer>
+  </body>
+</html>
